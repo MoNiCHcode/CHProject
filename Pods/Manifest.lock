@@ -1,14 +1,17 @@
 PODS:
+  - MBProgressHUD (0.9.2)
   - YYImage (1.0.2):
     - YYImage/Core (= 1.0.2)
   - YYImage/Core (1.0.2)
 
 DEPENDENCIES:
+  - MBProgressHUD (~> 0.9.2)
   - YYImage (~> 1.0.2)
 
 SPEC CHECKSUMS:
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   YYImage: 2cc79ed49b9549b71c6715cefe7b0f5ab3d33abf
 
-PODFILE CHECKSUM: 1864f4163fba847bf973453c66d410a322243656
+PODFILE CHECKSUM: ac8f2880c33b6f25a4bd520779e47f971e7452c3
 
 COCOAPODS: 1.0.1
