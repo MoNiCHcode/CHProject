@@ -108,14 +108,7 @@
 		17D5FBE51E278CC500F79E33 /* CHProject */ = {
 			isa = PBXGroup;
 			children = (
-				17D5FBE91E278CC500F79E33 /* AppDelegate.h */,
-				17D5FBEA1E278CC500F79E33 /* AppDelegate.m */,
-				17D5FBEC1E278CC500F79E33 /* ViewController.h */,
-				17D5FBED1E278CC500F79E33 /* ViewController.m */,
-				17D5FBEF1E278CC500F79E33 /* Main.storyboard */,
 				17D5FBF21E278CC500F79E33 /* Assets.xcassets */,
-				17D5FBF41E278CC500F79E33 /* LaunchScreen.storyboard */,
-				17D5FBF71E278CC500F79E33 /* Info.plist */,
 				17D5FBE61E278CC500F79E33 /* Supporting Files */,
 			);
 			path = CHProject;
@@ -124,6 +117,13 @@
 		17D5FBE61E278CC500F79E33 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				17D5FBE91E278CC500F79E33 /* AppDelegate.h */,
+				17D5FBEA1E278CC500F79E33 /* AppDelegate.m */,
+				17D5FBEC1E278CC500F79E33 /* ViewController.h */,
+				17D5FBED1E278CC500F79E33 /* ViewController.m */,
+				17D5FBEF1E278CC500F79E33 /* Main.storyboard */,
+				17D5FBF41E278CC500F79E33 /* LaunchScreen.storyboard */,
+				17D5FBF71E278CC500F79E33 /* Info.plist */,
 				17D5FBE71E278CC500F79E33 /* main.m */,
 			);
 			name = "Supporting Files";
