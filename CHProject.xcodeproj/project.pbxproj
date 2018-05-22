@@ -16,6 +16,8 @@
 		17D5FC011E278CC500F79E33 /* CHProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D5FC001E278CC500F79E33 /* CHProjectTests.m */; };
 		17D5FC0C1E278CC500F79E33 /* CHProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D5FC0B1E278CC500F79E33 /* CHProjectUITests.m */; };
 		927D10FA2D4E0C76D687D8B8 /* libPods-CHProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6623D1FC4A2513CFA4B1E5B /* libPods-CHProject.a */; };
+		AF4C83D320B3F5750072ABB1 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4C83D220B3F5750072ABB1 /* BaseViewController.m */; };
+		AF4C83D920B3F5AA0072ABB1 /* RACTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4C83D820B3F5AA0072ABB1 /* RACTestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,11 @@
 		17D5FC0D1E278CC500F79E33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84BEFF1D02BCB8594A3AD169 /* Pods-CHProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-CHProject/Pods-CHProject.release.xcconfig"; sourceTree = "<group>"; };
 		A6623D1FC4A2513CFA4B1E5B /* libPods-CHProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CHProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF4C83CE20B3F0D50072ABB1 /* CHPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHPrefixHeader.pch; sourceTree = "<group>"; };
+		AF4C83D120B3F5750072ABB1 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		AF4C83D220B3F5750072ABB1 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		AF4C83D720B3F5AA0072ABB1 /* RACTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACTestViewController.h; sourceTree = "<group>"; };
+		AF4C83D820B3F5AA0072ABB1 /* RACTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACTestViewController.m; sourceTree = "<group>"; };
 		DDA0D322D5E8C85CD5F5C312 /* Pods-CHProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CHProject/Pods-CHProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,7 +115,8 @@
 		17D5FBE51E278CC500F79E33 /* CHProject */ = {
 			isa = PBXGroup;
 			children = (
-				17D5FBF21E278CC500F79E33 /* Assets.xcassets */,
+				AF4C83CF20B3F5330072ABB1 /* Controller */,
+				AF4C83D020B3F5520072ABB1 /* Base */,
 				17D5FBE61E278CC500F79E33 /* Supporting Files */,
 			);
 			path = CHProject;
@@ -121,10 +129,12 @@
 				17D5FBEA1E278CC500F79E33 /* AppDelegate.m */,
 				17D5FBEC1E278CC500F79E33 /* ViewController.h */,
 				17D5FBED1E278CC500F79E33 /* ViewController.m */,
+				17D5FBF21E278CC500F79E33 /* Assets.xcassets */,
 				17D5FBEF1E278CC500F79E33 /* Main.storyboard */,
 				17D5FBF41E278CC500F79E33 /* LaunchScreen.storyboard */,
 				17D5FBF71E278CC500F79E33 /* Info.plist */,
 				17D5FBE71E278CC500F79E33 /* main.m */,
+				AF4C83CE20B3F0D50072ABB1 /* CHPrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -153,6 +163,24 @@
 				A6623D1FC4A2513CFA4B1E5B /* libPods-CHProject.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF4C83CF20B3F5330072ABB1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AF4C83D720B3F5AA0072ABB1 /* RACTestViewController.h */,
+				AF4C83D820B3F5AA0072ABB1 /* RACTestViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AF4C83D020B3F5520072ABB1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				AF4C83D120B3F5750072ABB1 /* BaseViewController.h */,
+				AF4C83D220B3F5750072ABB1 /* BaseViewController.m */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		C179D43DD6A563FE1EADC21E /* Pods */ = {
@@ -320,13 +348,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CHProject-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9F597D7B8724E21B05973703 /* [CP] Embed Pods Frameworks */ = {
@@ -352,8 +383,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				17D5FBEE1E278CC500F79E33 /* ViewController.m in Sources */,
+				AF4C83D320B3F5750072ABB1 /* BaseViewController.m in Sources */,
 				17D5FBEB1E278CC500F79E33 /* AppDelegate.m in Sources */,
 				17D5FBE81E278CC500F79E33 /* main.m in Sources */,
+				AF4C83D920B3F5AA0072ABB1 /* RACTestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +535,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UCSCSLG35R;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CHProject/CHPrefixHeader.pch;
 				INFOPLIST_FILE = CHProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZZ.CHProject;
@@ -515,6 +550,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UCSCSLG35R;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CHProject/CHPrefixHeader.pch;
 				INFOPLIST_FILE = CHProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZZ.CHProject;

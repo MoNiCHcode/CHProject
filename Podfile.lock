@@ -1,17 +1,20 @@
 PODS:
   - MBProgressHUD (0.9.2)
+  - ReactiveObjC (3.1.0)
   - YYImage (1.0.2):
     - YYImage/Core (= 1.0.2)
   - YYImage/Core (1.0.2)
 
 DEPENDENCIES:
   - MBProgressHUD (~> 0.9.2)
+  - ReactiveObjC (~> 3.1.0)
   - YYImage (~> 1.0.2)
 
 SPEC CHECKSUMS:
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
   YYImage: 2cc79ed49b9549b71c6715cefe7b0f5ab3d33abf
 
-PODFILE CHECKSUM: ac8f2880c33b6f25a4bd520779e47f971e7452c3
+PODFILE CHECKSUM: 3b6d7fc5ccce6f0d47bf5f0a60ea951422a28ec3
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.4.0.rc.1
